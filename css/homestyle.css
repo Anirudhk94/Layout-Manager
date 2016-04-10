@@ -1,0 +1,14 @@
+body {
+    background: grey;
+}
+
+canvas {
+    background: #fff;
+    
+    margin-left: 150px;
+}
+
+#container1 {
+	display: block;	
+	height: 100px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
+  <script src="js/homescript.js"></script>
+</head>
+<body>
+
+<div class="page-container">
+  
+  <!-- top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#CB212C">
+      <div class="navbar-header">
+           <a class="navbar-brand" href="index.html" style="color:white">Restaurant</a>           
+      </div>      
+      <a id="downloadImage" target='blank' href="#" style="float:right;color:white;padding:10px;"> Download Image </a>      
+      <a id="saveAsImage" href="#" style="float:right;color:white;padding:10px;"> Save as Image </a>
+    </nav>
+      
+    <div class="container-fluid" style="margin-top: 50px;">
+      <div class="row ">
+        <!--/main-->
+        <div class="col-xs-12 " data-spy="scroll" data-target="#sidebar-nav" style="padding:5px;">
+          <div class="row">                                    
+            <div class="col-xs-3" style="padding-right:0px;">
+                <div class="panel panel-default">
+                  <div class="panel-body" id="build" style="padding:0px; height:750px;">                    
+                    <canvas id="myCanvas" width="150" height="275" style="margin-left:0px;margin-top:30px;"></canvas>                    
+                    <div class="form " style="padding:15px;" id="leftMenuInputs">
+                      <div class="form-group">
+                        <label for="tableDimension">Table Width</label>
+                        <input type="text" class="form-control" id="tableDimension" placeholder="Width of the Table">
+                        <label for="tableName">Table Name</label>
+                        <input type="text" class="form-control" id="tableName" placeholder="Name of the Table">
+                        <label for="htableChairs">Horizontal Chairs</label>
+                        <input type="text" class="form-control" id="htableChairs" placeholder="Number of horizontal chairs">
+                        <label for="vtableChairs">Vertical Chairs</label>
+                        <input type="text" class="form-control" id="vtableChairs" placeholder="Number of vertical chairs">
+                        <button type="button" class="btn btn-primary" id="updateShape">Update Shape</button>
+                      </div>                    
+                    </div>
+                  </div><!--/panel-body-->
+               </div> <!--/panel-->
+            </div><!--/col-6-->                                                  
+            <div class="col-xs-9" style="padding-left:5px;">
+                <div class="panel panel-default">
+                  <div class="panel-body" id="build" style="padding:0px; height:750px;">
+                    <div id="parentBox">
+                    </div>                            
+                  </div><!--/panel-body-->
+               </div> <!--/panel-->
+            </div><!--/col-6-->          
+          </div><!--/.col-xs-12-->
+        </div><!--/.row-->
+      </div>
+    </div><!--/.container-->
+  </div>
+   	
+  </body>
+</html>

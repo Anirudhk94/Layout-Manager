@@ -1,0 +1,16 @@
+#roomsDiv{
+	display: block;	
+	padding: 0 2em;	
+	padding-top: 30px;
+}
+
+#roomTiles {
+	padding: 30px;
+}
+
+.tileContent {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+}
